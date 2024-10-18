@@ -16,4 +16,5 @@ ToDoListProj/db.sqlite3
 
 # Ignore txt file
 ToDoListProj/templates/file.txt
+ToDoListProj/templates/file2.txt
 
