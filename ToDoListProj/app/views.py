@@ -65,3 +65,4 @@ def logout_view(request):
 def todo_list(request):
     todos = Todo.objects.filter(user=request.user)  # Filter todos by the logged-in user
     return render(request, 'todo_list.html', {'todos': todos})
+

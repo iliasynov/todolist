@@ -1,0 +1,15 @@
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment directory
+venv/
+
+# Ignore environment variables file
+.env
+
+# Ignore SQLite database file
+todolistproj/db.sqlite3
+
+# Ignore VS Code settings
+.vscode/
