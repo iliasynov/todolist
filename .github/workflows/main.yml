@@ -32,11 +32,14 @@ jobs:
 
       # Step 4: Set up the database (SQLite for testing)
       - name: Make migrations
+        working-directory: ToDoListProj
         run: python manage.py makemigrations
 
       - name: Run migrations
+        working-directory: ToDoListProj
         run: python manage.py migrate
 
       # Step 5: Run tests
       - name: Run tests
+        working-directory: ToDoListProj
         run: python manage.py test
