@@ -14,10 +14,10 @@ jobs:
       - name: Send message to Discord
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d '{"content":'
+          -d '{"content":"
             ___   _   ___ \n
            / _ \ | | |__ \ \n
           | | | || |    ) | \n
           | |_| || |   / / \n
-           \___/ |_|  /_/' \
+           \___/ |_|  /_/" }' \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
