@@ -14,6 +14,6 @@ steps:
   - name: Send message to Discord
     run: |
       curl -X POST -H "Content-Type: application/json" \
-      -d '{"content": "https://images-ext-1.discordapp.net/external/3668m_hEcUewcQiw9Vihc7wNW681t6mX3PwVU7Ja9Z4/https/media.tenor.com/3-YewQ7i6HYAAAPo/wow-surprised-face.mp4"}' \
+      -d '{"content": "THE CONTENT IS RIGHT 🙃​🙃​🫠​🥰​😘​🚨​👁️​🥹​🤓​😡​ https://tenor.com/view/ui-ouch-gif-25596228"}' \
       ${{ secrets.DISCORD_WEBHOOK_URL }}
 
