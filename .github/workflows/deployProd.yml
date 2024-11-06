@@ -1,0 +1,14 @@
+name: Deploy Productions
+
+on:
+  workflow_run:
+    workflows: ["Build and Test"]
+    types:
+      - completed
+
+jobs:
+  post_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Deployment
+        run: echo "Running deployment ..."
