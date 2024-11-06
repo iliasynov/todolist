@@ -15,5 +15,5 @@ jobs:
       - name: Send message to Discord
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d '{"content": "hello world"}' \
+          -d '{"content": "hello world /n\n https://tenor.com/view/ui-ouch-gif-25596228 \n/n 🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕 "}' \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
