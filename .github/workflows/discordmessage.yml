@@ -10,14 +10,10 @@ jobs:
   notify-discord:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Send message to Discord
-        run: |
-          curl -X POST -H "Content-Type: application/json" \
-          -d '{"content":"
-            ___   _   ___ \n
-           / _ \ | | |__ \ \n
-          | | | || |    ) | \n
-          | |_| || |   / / \n
-           \___/ |_|  /_/" }' \
-          ${{ secrets.DISCORD_WEBHOOK_URL }}
+steps:
+  - name: Send message to Discord
+    run: |
+      curl -X POST -H "Content-Type: application/json" \
+      -d '{"content": "___   _   ___ \\n/ _ \\ | | |__ \\n| | | || |    ) |\\n| |_| || |   / / \\n \\___/ |_|  /_/"}' \
+      ${{ secrets.DISCORD_WEBHOOK_URL }}
+
