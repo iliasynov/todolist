@@ -9,18 +9,18 @@ on:
 jobs:
   notify-discord:
     runs-on: ubuntu-latest
-    # env:
-    #   ASCII_ART: |
-    #     // Your ASCII art goes here
-    #     ___   _   ___
-    #     / _ \ | | |__ \
-    #     | | | || |    ) |
-    #     | |_| || |   / /
-    #     \___/ |_|  /_/
+    env:
+      ASCII_ART: |
+        // Your ASCII art goes here
+        ___   _   ___
+       / _ \ | | |__ \
+      | | | || |    ) |
+      | |_| || |   / /
+       \___/ |_|  /_/
 
     steps:
       - name: Send message to Discord
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d '{"content": "hello server"}' \
+          -d '{"content": "${{ env.ASCII_ART }}"}' \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
