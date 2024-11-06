@@ -22,5 +22,5 @@ jobs:
       - name: Send message to Discord
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d '{"content": "${{ env.ASCII_ART }}"}' \
+          -d '{"content": ${{ env.ASCII_ART }}}' \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
