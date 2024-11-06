@@ -12,11 +12,11 @@ jobs:
     env:
       ASCII_ART: |
         // Your ASCII art goes here
-        ___   _   ___
-       / _ \ | | |__ \
-      | | | || |    ) |
-      | |_| || |   / /
-       \___/ |_|  /_/
+          ___   _   ___
+         / _ \ | | |__ \
+        | | | || |    ) |
+        | |_| || |   / /
+         \___/ |_|  /_/
 
     steps:
       - name: Send message to Discord
